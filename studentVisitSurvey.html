@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Student Visitation Survey</title>
+	<meta charset="UTF-8">
+   <meta name="author" content="Alexa Reza">
+   <link href="surveyFormCSS.css" rel="stylesheet">
+</head>
+
+<form method = "POST">
+   <table>
+      <tr><th class="textFields">Thank you for visiting the University of Texas at Austin campus!</th></tr>
+      <tr><th class="textFields">We would like to conduct a survey in order to gather feedback about your visit.</th></tr>
+      <tr><th><br></th></tr>
+   </table>
+   <table>
+      <tr><th><label>Student Name: <input name = "name" type = "text" size = "30" > </label></th></tr>
+      <tr><th><label>Street Address: <input name = "Address" type = "text" size = "30" > </label></th></tr>
+      <tr><th>Student Email: <label> <input name = "email" type = "text" size = "30" ></label></th></tr>
+   </table>
+
+   <table>
+      <tr><th colspan ="6"><br></th></tr>
+
+      <tr><th colspan ="6">What did you like most about campus?</th></tr>
+      <tr>
+         <td><label><input name = "attraction[]" type = "checkbox" value = "students" >Students</label></td>   
+         <td><label><input name = "attraction[]" type = "checkbox" value = "location" >Location</label></td>
+         <td><label><input name = "attraction[]" type = "checkbox" value = "campus" ></label>Campus</td>
+         <td><label><input name = "attraction[]" type = "checkbox" value = "courses offered" >Courses Offered </label></td>
+         <td><label><input name = "attraction[]" type = "checkbox" value = "housing" ></label>Housing</td>
+         <td><label><input name = "attraction[]" type = "checkbox" value = "sports" ></label>Sports</td>
+      </tr>
+      <tr><th colspan ="6"><br></th></tr>
+   </table>
+ 
+   <table>
+      <tr><th colspan ="5">How did you become interested in the university?</th></tr>
+      <tr>
+         <td><label><input name = "connection" type = "radio" value = "family" >Family</label></td>
+         <td><label><input name = "connection" type = "radio" value = "friends" >Friends</label></td>
+         <td><label><input name = "connection" type = "radio" value = "TV" >Television</label></td>
+         <td><label><input name = "connection" type = "radio" value = "internet">Internet</label></td>
+         <td><label><input name = "connection" type = "radio" value = "other" >Other</label></td>
+      </tr>
+      <tr><th colspan ="5"><br></th></tr>
+   </table>
+
+   <table> 
+      <tr><td>
+         <b>Departments you visited:</b>
+         <label>
+            <select name = "departments visited">
+               <option selected = "selected"> Biology </option>
+               <option> Chemistry </option>
+               <option> Computer Science </option>
+               <option> Engineering </option>
+               <option> Fine Arts </option>
+               <option> Liberal Arts </option>
+            </select>
+         </label>
+      </td></tr>
+
+      <tr><th><br></th></tr>
+      <tr> <th>Additional Comments:</th></tr>
+      <tr>
+         <td><label>
+            <textarea placeholder="Enter comments here:" name = "comments" rows = "4" cols = "36"></textarea>
+         </label></td>
+      </tr>
+   </table>
+   <table>
+      <tr>
+      <td><input type = "submit" value = "Submit" ></td>
+      <td><input type = "reset" value = "Clear" ></td>
+      </tr>
+   </table>
+ </form>
